@@ -33,12 +33,12 @@ export const Navbar: React.FC = () => {
           </Link>
         </div>
         
-        <div className="hidden sm:flex space-x-6 text-sm font-medium text-slate-300">
+        <div className="hidden sm:flex items-center space-x-6 text-sm font-medium text-slate-300">
+          <Link to="/" className={`transition-colors ${location.pathname === '/' ? 'text-emerald-400 font-semibold' : 'hover:text-white'}`}>Dashboard</Link>
           <a href="https://ruralopstools.com" className="hover:text-white transition-colors">Master Site</a>
-          <a href="https://ruralopstools.com/portfolio" className="hover:text-white transition-colors">Network</a>
-          <a href="https://ruralopstools.com/disclaimer" className="hover:text-white transition-colors">Legal</a>
-          <Link to="/" className={`transition-colors ${location.pathname === '/' ? 'text-white border-b-2 border-emerald-500 pb-4 mt-4' : 'hover:text-white'}`}>Dashboard</Link>
-          <a href="https://ruralopstools.com/contact" className="hover:text-white transition-colors">Contact</a>
+          <Link to="/portfolio" className={`transition-colors ${location.pathname === '/portfolio' ? 'text-white font-semibold' : 'hover:text-white'}`}>Network</Link>
+          <Link to="/legal" className={`transition-colors ${location.pathname === '/legal' ? 'text-white font-semibold' : 'hover:text-white'}`}>Legal</Link>
+          <Link to="/contact" className={`transition-colors ${location.pathname === '/contact' ? 'text-white font-semibold' : 'hover:text-white'}`}>Contact</Link>
         </div>
 
         <div className="-mr-2 flex items-center sm:hidden">
