@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-2">
              <div className="flex flex-col">
                 <span className="text-xl font-bold leading-tight text-slate-800 tracking-tight">Dairy Hub</span>
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4">Part of RuralUtilityCost.com</span>
+                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-4">Part of RuralOpsTools.com</span>
               </div>
             <p className="text-sm text-slate-500 max-w-sm mb-6 leading-relaxed">
               A dairy economics and decision-support hub for milk production, dairy herd planning, feed efficiency, milk pricing, and margin analysis.
@@ -37,12 +37,12 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="text-[10px] font-bold text-slate-400 tracking-wider uppercase mb-4">Ecosystem</h3>
             <ul className="space-y-3">
-              <li><a href="https://ruralutilitycost.com/portfolio" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><LayoutGrid className="h-4 w-4 text-slate-400" /> Network / Apps</a></li>
-              <li><a href="https://ruralutilitycost.com/about" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><Info className="h-4 w-4 text-slate-400" /> About Us</a></li>
-              <li><a href="https://ruralutilitycost.com/contact" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><Mail className="h-4 w-4 text-slate-400" /> Contact Us</a></li>
-              <li><a href="https://ruralutilitycost.com/terms-of-use" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><Scale className="h-4 w-4 text-slate-400" /> Terms of Use</a></li>
-              <li><a href="https://ruralutilitycost.com/privacy-policy" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><FileText className="h-4 w-4 text-slate-400" /> Privacy Policy</a></li>
-              <li><a href="https://ruralutilitycost.com/disclaimer" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><ShieldAlert className="h-4 w-4 text-slate-400" /> Disclaimer</a></li>
+              <li><a href="https://ruralopstools.com/portfolio" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><LayoutGrid className="h-4 w-4 text-slate-400" /> Network / Apps</a></li>
+              <li><a href="https://ruralopstools.com/about" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><Info className="h-4 w-4 text-slate-400" /> About Us</a></li>
+              <li><a href="https://ruralopstools.com/contact" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><Mail className="h-4 w-4 text-slate-400" /> Contact Us</a></li>
+              <li><a href="https://ruralopstools.com/terms-of-use" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><Scale className="h-4 w-4 text-slate-400" /> Terms of Use</a></li>
+              <li><a href="https://ruralopstools.com/privacy-policy" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><FileText className="h-4 w-4 text-slate-400" /> Privacy Policy</a></li>
+              <li><a href="https://ruralopstools.com/disclaimer" className="text-sm text-slate-500 hover:text-emerald-600 transition-colors flex items-center gap-2"><ShieldAlert className="h-4 w-4 text-slate-400" /> Disclaimer</a></li>
             </ul>
           </div>
         </div>
@@ -50,8 +50,8 @@ export const Footer: React.FC = () => {
         {/* Shared Ecosystem Signature line matching design */}
         <div className="mt-10 pt-6 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-medium text-slate-500">
           <div className="flex items-center space-x-4">
-            <p>&copy; {new Date().getFullYear()} Rural Utility Cost Ecosystem</p>
-            <a href="https://ruralutilitycost.com/disclaimer" className="hover:text-emerald-600 transition-colors">Legal Disclaimer</a>
+            <p>&copy; {new Date().getFullYear()} Rural Ops Tools Ecosystem</p>
+            <a href="https://ruralopstools.com/disclaimer" className="hover:text-emerald-600 transition-colors">Legal Disclaimer</a>
              <span className="text-slate-300">|</span>
             <p className="italic">Results are estimates only based on user inputs.</p>
           </div>

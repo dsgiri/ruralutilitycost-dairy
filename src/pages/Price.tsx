@@ -103,6 +103,38 @@ export const Price: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-12 space-y-8">
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Logic & Formulas</h2>
+          <div className="space-y-3 text-sm text-slate-600">
+            <p><strong>Fat Premium/Deduct:</strong> (Actual Fat % - Base Fat %) × Fat Premium Value</p>
+            <p><strong>Protein Premium/Deduct:</strong> (Actual Protein % - Base Protein %) × Protein Premium Value</p>
+            <p><strong>Final Price per CWT:</strong> Base Price + Fat Adjustment + Protein Adjustment</p>
+            <p><strong>Total Estimated Revenue:</strong> Final Price per CWT × Total CWT Produced</p>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">How are components priced?</h3>
+              <p className="text-sm text-slate-600 mt-1">Component prices are typically set by Federal Milk Marketing Orders (FMMO) or your specific cooperative. Base tests are usually 3.5% for fat and 2.99% for true protein.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">What happens if components are below base?</h3>
+              <p className="text-sm text-slate-600 mt-1">If your actual fat or protein percentage falls below the base contract levels, the premium becomes a deduction, lowering your final price per CWT.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"><h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Related Tools</h2><div className="flex gap-4"><a href="/feed" className="text-emerald-600 hover:underline text-sm font-medium">Income Over Feed Cost</a><span className="text-slate-300">|</span><a href="/breakeven" className="text-emerald-600 hover:underline text-sm font-medium">Break-Even Calculator</a></div></section>
+
+        <section className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+          <p className="text-xs text-slate-500"><strong>Disclaimer:</strong> Results provide estimates only. This tool is designed for conceptual modeling and theoretical forecasting. It does not replace veterinary, agronomy, financial, or legal advice.</p>
+        </section>
+      </div>
     </div>
   );
 };

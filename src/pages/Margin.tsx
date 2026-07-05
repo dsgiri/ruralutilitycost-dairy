@@ -81,6 +81,39 @@ export const Margin: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-12 space-y-8">
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Logic & Formulas</h2>
+          <div className="space-y-3 text-sm text-slate-600">
+            <p><strong>Corn Cost per CWT:</strong> (Corn Price / 56) × Corn Required</p>
+            <p><strong>Soybean Meal Cost per CWT:</strong> (Soybean Meal Price / 2000) × SBM Required</p>
+            <p><strong>Alfalfa Cost per CWT:</strong> (Alfalfa Price / 2000) × Alfalfa Required</p>
+            <p><strong>Total Feed Cost per CWT:</strong> Corn Cost + SBM Cost + Alfalfa Cost</p>
+            <p><strong>Margin per CWT:</strong> All-Milk Price - Total Feed Cost per CWT</p>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">How is this margin calculated?</h3>
+              <p className="text-sm text-slate-600 mt-1">This tool models margin logic similarly to the USDA Dairy Margin Coverage (DMC) program, using standard feed conversion ratios (corn, soybean meal, alfalfa hay) deducted from the All-Milk price.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">What does a low margin mean?</h3>
+              <p className="text-sm text-slate-600 mt-1">If your calculated margin drops below standard DMC coverage tiers (e.g., $9.50/cwt), it signals higher financial risk and may indicate that enrolled producers could receive indemnity payments.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"><h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Related Tools</h2><div className="flex gap-4"><a href="/feed" className="text-emerald-600 hover:underline text-sm font-medium">Income Over Feed Cost</a><span className="text-slate-300">|</span><a href="/breakeven" className="text-emerald-600 hover:underline text-sm font-medium">Break-Even Calculator</a></div></section>
+
+        <section className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+          <p className="text-xs text-slate-500"><strong>Disclaimer:</strong> Results provide estimates only. This tool is designed for conceptual modeling and theoretical forecasting. It does not replace veterinary, agronomy, financial, or legal advice.</p>
+        </section>
+      </div>
     </div>
   );
 };

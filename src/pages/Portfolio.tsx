@@ -31,7 +31,7 @@ export const Portfolio: React.FC = () => {
           Ecosystem Portfolio
         </h1>
         <p className="text-sm text-slate-500 mt-2 max-w-2xl">
-          The Rural Utility Cost network comprises specialized applications for agricultural planning, utility economics, and operational decision support. Explore the connected ecosystem below.
+          The Rural Ops Tools network comprises specialized applications for agricultural planning, utility economics, and operational decision support. Explore the connected ecosystem below.
         </p>
       </header>
 
@@ -73,7 +73,7 @@ export const Portfolio: React.FC = () => {
       
       <section className="bg-white border text-center border-slate-200 p-8 rounded-xl shadow-sm mt-8">
           <h2 className="text-sm font-bold text-slate-800 mb-2">Looking for the original application?</h2>
-          <p className="text-xs text-slate-500">Return to the <a href="https://ruralutilitycost.com" className="text-emerald-600 font-medium hover:underline">Master Site</a> for the primary ecosystem hub.</p>
+          <p className="text-xs text-slate-500">Return to the <a href="https://ruralopstools.com" className="text-emerald-600 font-medium hover:underline">Master Site</a> for the primary ecosystem hub.</p>
       </section>
     </div>
   );

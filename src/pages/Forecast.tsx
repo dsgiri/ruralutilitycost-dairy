@@ -120,6 +120,36 @@ export const Forecast: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-12 space-y-8">
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Logic & Formulas</h2>
+          <div className="space-y-3 text-sm text-slate-600">
+            <p><strong>Total Milk Output:</strong> Current Herd Size × Daily Milk per Cow × Days in Month × Seasonality Index</p>
+            <p><strong>Herd Growth:</strong> Herd Size × (1 + Annual Growth Rate / 12)<sup>month</sup></p>
+            <p><strong>CWT Conversion:</strong> Total Pounds / 100</p>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">How is seasonality factored in?</h3>
+              <p className="text-sm text-slate-600 mt-1">The model applies standard spring flush (Mar-May) and summer slump (Jul-Aug) yield adjustments to the baseline daily average.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">How is herd growth applied?</h3>
+              <p className="text-sm text-slate-600 mt-1">The annual growth rate is converted into a compounded monthly rate, automatically increasing the total milking cows for each projected month.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"><h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Related Tools</h2><div className="flex gap-4"><a href="/breakeven" className="text-emerald-600 hover:underline text-sm font-medium">Break-Even Calculator</a><span className="text-slate-300">|</span><a href="/margin" className="text-emerald-600 hover:underline text-sm font-medium">Margin Coverage & Risk</a></div></section>
+        <section className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+          <p className="text-xs text-slate-500"><strong>Disclaimer:</strong> Results provide estimates only. This tool is designed for conceptual modeling and theoretical forecasting. It does not replace veterinary, agronomy, financial, or legal advice.</p>
+        </section>
+      </div>
     </div>
   );
 };

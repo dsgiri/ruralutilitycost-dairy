@@ -112,6 +112,38 @@ export const Feed: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-12 space-y-8">
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Logic & Formulas</h2>
+          <div className="space-y-3 text-sm text-slate-600">
+            <p><strong>Feed Cost per Cow:</strong> DM Intake per Cow × Cost per lb of DM</p>
+            <p><strong>Milk Revenue per Cow:</strong> (Milk Yield per Cow / 100) × Milk Price per CWT</p>
+            <p><strong>IOFC per Cow:</strong> Milk Revenue per Cow - Feed Cost per Cow</p>
+            <p><strong>Feed Cost per CWT:</strong> (Feed Cost per Cow / Milk Yield per Cow) × 100</p>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">What is IOFC?</h3>
+              <p className="text-sm text-slate-600 mt-1">Income Over Feed Cost (IOFC) is a critical profitability metric indicating the amount of milk revenue remaining after paying for feed, which is typically the largest operating expense on a dairy.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">Why track Dry Matter (DM)?</h3>
+              <p className="text-sm text-slate-600 mt-1">Measuring feed by dry matter removes the variable weight of water in forages, standardizing rations and providing a truer measure of feed efficiency and nutrient intake.</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"><h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Related Tools</h2><div className="flex gap-4"><a href="/breakeven" className="text-emerald-600 hover:underline text-sm font-medium">Break-Even Calculator</a><span className="text-slate-300">|</span><a href="/margin" className="text-emerald-600 hover:underline text-sm font-medium">Margin Coverage & Risk</a></div></section>
+
+        <section className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+          <p className="text-xs text-slate-500"><strong>Disclaimer:</strong> Results provide estimates only. This tool is designed for conceptual modeling and theoretical forecasting. It does not replace veterinary, agronomy, financial, or legal advice.</p>
+        </section>
+      </div>
     </div>
   );
 };

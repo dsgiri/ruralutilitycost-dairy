@@ -5,7 +5,7 @@ export const About: React.FC = () => {
     <div className="max-w-3xl mx-auto space-y-8 flex-1">
       <header className="mb-8">
         <h1 className="text-2xl font-bold text-slate-800 tracking-tight">About Dairy Hub</h1>
-        <p className="text-sm text-slate-500 mt-1">Part of the RuralUtilityCost.com Ecosystem</p>
+        <p className="text-sm text-slate-500 mt-1">Part of the RuralOpsTools.com Ecosystem</p>
       </header>
 
       <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm max-w-none space-y-6">
@@ -29,7 +29,7 @@ export const About: React.FC = () => {
         <hr className="my-8 border-slate-100" />
         
         <p className="text-xs font-medium text-slate-500 bg-slate-50 p-4 rounded-lg border border-slate-100">
-          This application is a specialized module within the larger Rural Utility Cost ecosystem, sharing its commitment to practical, data-driven agricultural and rural utility planning.
+          This application is a specialized module within the larger Rural Ops Tools ecosystem, sharing its commitment to practical, data-driven agricultural and rural utility planning.
         </p>
       </div>
     </div>

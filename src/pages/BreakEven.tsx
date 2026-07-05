@@ -95,6 +95,38 @@ export const BreakEven: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-12 space-y-8">
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Logic & Formulas</h2>
+          <div className="space-y-3 text-sm text-slate-600">
+            <p><strong>Total Cost per Cow:</strong> Feed Cost + Operating Cost + Fixed Cost (all per cow, per day)</p>
+            <p><strong>CWT per Cow:</strong> Milk Yield per Cow / 100</p>
+            <p><strong>Break-Even Price per CWT:</strong> Total Cost per Cow / CWT per Cow</p>
+            <p><strong>Component Costs per CWT:</strong> Component Cost per Cow / CWT per Cow</p>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+          <h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">What is the break-even milk price?</h3>
+              <p className="text-sm text-slate-600 mt-1">It's the minimum price per hundredweight (CWT) you must receive for your milk to cover all direct and indirect expenses, resulting in zero net profit or loss.</p>
+            </div>
+            <div>
+              <h3 className="font-bold text-slate-700 text-sm">How do fixed vs. operating costs differ?</h3>
+              <p className="text-sm text-slate-600 mt-1">Operating costs vary with herd size and production (e.g., vet, supplies, fuel). Fixed costs remain relatively stable regardless of production levels (e.g., insurance, property taxes, depreciation).</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm"><h2 className="text-lg font-bold text-slate-800 mb-4 border-b border-slate-100 pb-2">Related Tools</h2><div className="flex gap-4"><a href="/margin" className="text-emerald-600 hover:underline text-sm font-medium">Margin Coverage & Risk</a><span className="text-slate-300">|</span><a href="/price" className="text-emerald-600 hover:underline text-sm font-medium">Milk Price Calculator</a></div></section>
+
+        <section className="bg-slate-50 p-6 rounded-xl border border-slate-200 text-center">
+          <p className="text-xs text-slate-500"><strong>Disclaimer:</strong> Results provide estimates only. This tool is designed for conceptual modeling and theoretical forecasting. It does not replace veterinary, agronomy, financial, or legal advice.</p>
+        </section>
+      </div>
     </div>
   );
 };

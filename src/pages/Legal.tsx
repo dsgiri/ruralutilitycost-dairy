@@ -16,7 +16,7 @@ export const Legal: React.FC = () => {
         <section>
           <h2 className="text-xl font-bold text-slate-900 mb-4 border-b border-slate-100 pb-2">Estimates & Forward-Looking Statements</h2>
           <p className="text-slate-700 leading-relaxed">
-            All outcomes presented by the tools within Dairy (RuralUtilityCost.com) provide estimates only. Calculated projections regarding milk production, revenue, feed costs, margins, and expansion paybacks rely strictly on the assumptions you input.
+            All outcomes presented by the tools within Dairy (RuralOpsTools.com) provide estimates only. Calculated projections regarding milk production, revenue, feed costs, margins, and expansion paybacks rely strictly on the assumptions you input.
           </p>
         </section>
 

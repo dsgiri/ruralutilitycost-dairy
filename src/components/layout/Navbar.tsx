@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
           <Link to="/" className="flex items-center gap-2 group">
             <div className="bg-emerald-500 w-8 h-8 rounded flex items-center justify-center font-bold text-slate-900 text-xs shadow-sm">RUC</div>
             <div className="flex items-baseline space-x-1">
-              <span className="font-bold tracking-tight text-lg group-hover:text-emerald-400 transition-colors">Rural Utility Cost</span>
+              <span className="font-bold tracking-tight text-lg group-hover:text-emerald-400 transition-colors">Rural Ops Tools</span>
               <span className="text-slate-400 font-normal hidden sm:inline">|</span>
               <span className="text-emerald-400 font-semibold hidden sm:inline">Dairy</span>
             </div>
@@ -34,11 +34,11 @@ export const Navbar: React.FC = () => {
         </div>
         
         <div className="hidden sm:flex space-x-6 text-sm font-medium text-slate-300">
-          <a href="https://ruralutilitycost.com" className="hover:text-white transition-colors">Master Site</a>
-          <a href="https://ruralutilitycost.com/portfolio" className="hover:text-white transition-colors">Network</a>
-          <a href="https://ruralutilitycost.com/disclaimer" className="hover:text-white transition-colors">Legal</a>
+          <a href="https://ruralopstools.com" className="hover:text-white transition-colors">Master Site</a>
+          <a href="https://ruralopstools.com/portfolio" className="hover:text-white transition-colors">Network</a>
+          <a href="https://ruralopstools.com/disclaimer" className="hover:text-white transition-colors">Legal</a>
           <Link to="/" className={`transition-colors ${location.pathname === '/' ? 'text-white border-b-2 border-emerald-500 pb-4 mt-4' : 'hover:text-white'}`}>Dashboard</Link>
-          <a href="https://ruralutilitycost.com/contact" className="hover:text-white transition-colors">Contact</a>
+          <a href="https://ruralopstools.com/contact" className="hover:text-white transition-colors">Contact</a>
         </div>
 
         <div className="-mr-2 flex items-center sm:hidden">
